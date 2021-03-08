@@ -1,0 +1,39 @@
+.stories {
+    display: block;
+    overflow-y: hidden;
+    padding: 10px 20px;
+    display: flex;
+    overflow-y: scroll;
+    flex-flow: row nowrap;
+    &__profile {
+        display: flex;
+        width: 80px;
+        flex-flow: column nowrap;
+        justify-content: center;
+        &-photo {
+            height: 66px;
+            width: 66px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            display: block;
+            overflow: hidden;
+            img {
+                object-fit: contain;
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+        &-name {
+            color: $color-text;
+            display: block;
+            font-size: 12px;
+            line-height: 14px;
+            max-width: 64px;
+            overflow: hidden;
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding-top: 5px;
+        }
+    }
+}

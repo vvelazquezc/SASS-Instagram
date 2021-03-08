@@ -1,10 +1,12 @@
+@import 'abstracts/colors';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'abstracts/colors';
+@import 'layout/stories';
 
 * {
     margin: 0;
     border-spacing: inherit;
+    font-family: $font-family;
 }
 .layout {
     height: 100vh;
@@ -14,7 +16,9 @@
         border-bottom: 1px solid $color-grey;
     }
     &__stories {
-
+        background: $background-stories;
+        border-bottom: 1px solid $color-grey;
+        height: 84px;
     }
     &__footer {
         width: 100%;
