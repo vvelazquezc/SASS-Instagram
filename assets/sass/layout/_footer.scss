@@ -1,0 +1,31 @@
+.footer {
+    position: fixed;
+    height: 54px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    &__links {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 50px;
+        align-items: center;
+        text-align: center;
+        &-icons {
+            flex: 3;
+            padding-top: 10px;
+            height: 40px;
+        }
+        &-profile{
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            display: block;
+            flex: 0 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+    }
+}
