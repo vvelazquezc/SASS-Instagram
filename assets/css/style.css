@@ -34,54 +34,56 @@
     .navbar__links-icons {
       padding-left: 10px; }
 
-.content {
-  padding-bottom: 70px; }
-  .content__header {
-    height: 60px;
-    padding: 0 10px;
+.content__header {
+  height: 60px;
+  padding: 0 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center; }
+  .content__header-photo {
+    height: 40px;
+    width: 40px; }
+  .content__header-user {
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center; }
-    .content__header-photo {
-      height: 40px;
-      width: 40px; }
-    .content__header-user {
-      display: flex;
-      flex-flow: column nowrap;
-      padding-left: 15px;
-      width: 90%; }
-      .content__header-user-name {
-        width: 100%; }
-      .content__header-user-location {
-        width: 100%;
-        font-size: 12px;
-        font-weight: 300; }
-    .content__header-menu {
-      width: 20px;
-      justify-self: right; }
-  .content__body {
-    width: 100%;
-    overflow: scroll; }
-    .content__body-photo {
-      height: auto; }
-  .content__icons {
-    padding: 5px 10px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between; }
-    .content__icons-interact svg {
-      padding-right: 5px; }
-  .content__comments {
-    padding: 0 10px; }
-    .content__comments-publication {
-      padding: 5px 0; }
-      .content__comments-publication .hastag {
-        color: #00376b; }
-    .content__comments-comment {
-      padding: 5px 0; }
-      .content__comments-comment .comments {
-        color: #8e8e8e;
-        font-weight: 400; }
+    flex-flow: column nowrap;
+    padding-left: 15px;
+    width: 90%; }
+    .content__header-user-name {
+      width: 100%; }
+    .content__header-user-location {
+      width: 100%;
+      font-size: 12px;
+      font-weight: 300; }
+  .content__header-menu {
+    width: 20px;
+    justify-self: right; }
+
+.content__body {
+  width: 100%;
+  overflow: scroll; }
+  .content__body-photo {
+    height: auto; }
+
+.content__icons {
+  padding: 5px 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+  .content__icons-interact svg {
+    padding-right: 5px; }
+
+.content__comments {
+  padding: 0 10px 10px 10px;
+  border-bottom: 1px solid #dbdbdb; }
+  .content__comments-publication {
+    padding: 5px 0; }
+    .content__comments-publication .hastag {
+      color: #00376b; }
+  .content__comments-comment {
+    padding: 5px 0; }
+    .content__comments-comment .comments {
+      color: #8e8e8e;
+      font-weight: 400; }
 
 .footer {
   position: fixed;
@@ -153,6 +155,8 @@
     background: #fafafa;
     border-bottom: 1px solid #dbdbdb;
     height: 84px; }
+  .layout__content {
+    padding-bottom: 70px; }
   .layout__footer {
     width: 100%;
     height: 54px;
