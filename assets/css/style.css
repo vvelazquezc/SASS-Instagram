@@ -1,6 +1,22 @@
+.content__header-user-name {
+  font-size: 14px;
+  font-weight: 600; }
+
+.content__header-photo img, .stories__profile-photo img, .content__body-photo img {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%; }
+
+.content__header-photo, .stories__profile-photo {
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden; }
+
 .navbar {
   position: sticky;
   top: 0;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -18,10 +34,60 @@
     .navbar__links-icons {
       padding-left: 10px; }
 
+.content {
+  padding-bottom: 70px; }
+  .content__header {
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center; }
+    .content__header-photo {
+      height: 40px;
+      width: 40px; }
+    .content__header-user {
+      display: flex;
+      flex-flow: column nowrap;
+      padding-left: 15px;
+      width: 90%; }
+      .content__header-user-name {
+        width: 100%; }
+      .content__header-user-location {
+        width: 100%;
+        font-size: 12px;
+        font-weight: 300; }
+    .content__header-menu {
+      width: 20px;
+      justify-self: right; }
+  .content__body {
+    width: 100%;
+    overflow: scroll; }
+    .content__body-photo {
+      height: auto; }
+  .content__icons {
+    padding: 5px 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+    .content__icons-interact svg {
+      padding-right: 5px; }
+  .content__comments {
+    padding: 0 10px; }
+    .content__comments-publication {
+      padding: 5px 0; }
+      .content__comments-publication .hastag {
+        color: #00376b; }
+    .content__comments-comment {
+      padding: 5px 0; }
+      .content__comments-comment .comments {
+        color: #8e8e8e;
+        font-weight: 400; }
+
 .footer {
   position: fixed;
   height: 54px;
   bottom: 0;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,7 +117,6 @@
   overflow-y: hidden;
   padding: 10px 20px;
   display: flex;
-  overflow-y: scroll;
   flex-flow: row nowrap; }
   .stories__profile {
     display: flex;
@@ -60,15 +125,7 @@
     justify-content: center; }
     .stories__profile-photo {
       height: 66px;
-      width: 66px;
-      border-radius: 50%;
-      box-sizing: border-box;
-      display: block;
-      overflow: hidden; }
-      .stories__profile-photo img {
-        object-fit: contain;
-        max-height: 100%;
-        max-width: 100%; }
+      width: 66px; }
     .stories__profile-name {
       color: #262626;
       display: block;

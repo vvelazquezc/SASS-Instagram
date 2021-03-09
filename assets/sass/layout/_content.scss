@@ -1,0 +1,71 @@
+.content{
+    padding-bottom: 70px;
+    &__header {
+        height: 60px;
+        padding: 0 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        &-photo{
+            height: 40px;
+            width: 40px;
+            @extend %border-radius;
+        }
+        &-user {
+            display: flex;
+            flex-flow: column nowrap;
+            padding-left: 15px;
+            width: 90%;
+            &-name{
+                width: 100%;
+                @extend %user;
+            }
+            &-location {
+                width: 100%;
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+        &-menu{
+            width: 20px;
+            justify-self: right;
+        }
+    }
+    &__body{
+        width: 100%;
+        overflow: scroll;
+        &-photo {
+            height: auto;
+            img {
+                @extend %imgs;
+            }
+        }
+    }
+    &__icons {
+        padding: 5px 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        &-interact{
+            svg {
+                padding-right: 5px;
+            }
+        }
+    }
+    &__comments {
+        padding: 0 10px;
+        &-publication {
+            padding: 5px 0;
+            .hastag {
+                color: $color-hastag;
+            }
+        }
+        &-comment {
+            padding: 5px 0;
+            .comments {
+                color: $color-second-grey;
+                font-weight: 400;
+            }
+        }
+    }
+}
