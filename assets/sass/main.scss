@@ -1,13 +1,21 @@
 @import 'abstracts/colors';
 @import 'abstracts/extend';
+
+@import 'components/buttons';
+
 @import 'layout/header';
 @import 'layout/content';
 @import 'layout/footer';
 @import 'layout/stories';
 
+
+@import 'login/footer';
+@import 'login/body';
+
 * {
     margin: 0;
     border-spacing: inherit;
+    font-size: 14px;
     font-family: $font-family;
 }
 .layout {
@@ -30,4 +38,15 @@
         height: 54px;
         border-top: 1px solid $color-grey;
     }
+}
+
+.login {
+    height: 100vh;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
 }

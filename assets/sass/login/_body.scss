@@ -1,0 +1,37 @@
+.login {
+    &__location{
+        padding-bottom: 50px;
+        select {
+            cursor: pointer;
+            border: 0;
+            color: $color-second-grey;
+        }
+    }
+    &__logo{
+        padding: 40px 0;
+    }
+    &__user{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        &-photo {
+            height: 120px;
+            width: 120px;
+            @extend %border-radius;
+        }
+        &-continue{
+            padding: 40px 0;
+            button {
+                @extend %buttons
+            }
+        }
+        &-change{
+            a {
+                text-decoration: none;
+                font-weight: 600;
+                color: $color-blue;
+            }
+        }
+
+    }
+}

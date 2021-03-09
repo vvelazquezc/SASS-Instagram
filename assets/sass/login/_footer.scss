@@ -1,0 +1,17 @@
+.login {
+    &__footer{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        height: 70px;
+        font-size: 12px;
+        color: $color-second-grey;
+        font-weight: 300;
+        span {
+            font-size: 16px;
+            color: black;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+    }
+}
