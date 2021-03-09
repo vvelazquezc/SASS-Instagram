@@ -1,13 +1,9 @@
 .stories {
-    display: block;
-    overflow-y: hidden;
     padding: 10px 20px;
-    display: flex;
-    flex-flow: row nowrap;
+    @extend %flex-box-row;
     &__profile {
-        display: flex;
         width: 80px;
-        flex-flow: column nowrap;
+        @extend %flex-box-column;
         justify-content: center;
         &-photo {
             height: 66px;

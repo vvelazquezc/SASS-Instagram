@@ -2,8 +2,7 @@
     &__header {
         height: 60px;
         padding: 0 10px;
-        display: flex;
-        flex-flow: row nowrap;
+        @extend %flex-box-row;
         align-items: center;
         &-photo{
             height: 40px;
@@ -11,8 +10,7 @@
             @extend %border-radius;
         }
         &-user {
-            display: flex;
-            flex-flow: column nowrap;
+            @extend %flex-box-column;
             padding-left: 15px;
             width: 90%;
             &-name{
@@ -42,8 +40,7 @@
     }
     &__icons {
         padding: 5px 10px;
-        display: flex;
-        flex-flow: row nowrap;
+        @extend %flex-box-row;
         justify-content: space-between;
         &-interact{
             svg {

@@ -1,11 +1,10 @@
-.content__header-user-name {
-  font-size: 14px;
-  font-weight: 600; }
+.navbar, .content__header, .content__icons, .footer, .footer__links, .stories {
+  display: flex;
+  flex-flow: row nowrap; }
 
-.content__header-photo img, .stories__profile-photo img, .login__user-photo img, .content__body-photo img {
-  object-fit: contain;
-  max-height: 100%;
-  max-width: 100%; }
+.content__header-user, .stories__profile {
+  display: flex;
+  flex-flow: column nowrap; }
 
 .content__header-photo, .stories__profile-photo, .login__user-photo {
   border-radius: 50%;
@@ -13,25 +12,32 @@
   display: block;
   overflow: hidden; }
 
-.login__user-continue button {
+.login__user-continue a {
   background-color: #0095f6;
   border: none;
   cursor: pointer;
-  height: 30px;
   display: block;
   font-weight: 600;
-  padding: 5px 9px;
+  padding: 9px;
   text-align: center;
   color: #fff;
   border-radius: 4px;
   max-width: 100%;
   min-width: 120px; }
 
+.content__header-photo img, .stories__profile-photo img, .login__user-photo img, .content__body-photo img {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%; }
+
+.content__header-user-name {
+  font-size: 14px;
+  font-weight: 600; }
+
 .navbar {
   position: sticky;
   top: 0;
   background-color: #fff;
-  display: flex;
   justify-content: space-between;
   align-items: center; }
   .navbar__logo {
@@ -51,15 +57,11 @@
 .content__header {
   height: 60px;
   padding: 0 10px;
-  display: flex;
-  flex-flow: row nowrap;
   align-items: center; }
   .content__header-photo {
     height: 40px;
     width: 40px; }
   .content__header-user {
-    display: flex;
-    flex-flow: column nowrap;
     padding-left: 15px;
     width: 90%; }
     .content__header-user-name {
@@ -80,8 +82,6 @@
 
 .content__icons {
   padding: 5px 10px;
-  display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between; }
   .content__icons-interact svg {
     padding-right: 5px; }
@@ -104,13 +104,10 @@
   height: 54px;
   bottom: 0;
   background-color: #fff;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px; }
   .footer__links {
-    display: flex;
-    flex-flow: row nowrap;
     height: 50px;
     align-items: center;
     text-align: center; }
@@ -129,15 +126,9 @@
       position: relative; }
 
 .stories {
-  display: block;
-  overflow-y: hidden;
-  padding: 10px 20px;
-  display: flex;
-  flex-flow: row nowrap; }
+  padding: 10px 20px; }
   .stories__profile {
-    display: flex;
     width: 80px;
-    flex-flow: column nowrap;
     justify-content: center; }
     .stories__profile-photo {
       height: 66px;
@@ -187,6 +178,9 @@
     width: 120px; }
   .login__user-continue {
     padding: 40px 0; }
+    .login__user-continue a {
+      text-decoration: none;
+      font-weight: 600; }
   .login__user-change a {
     text-decoration: none;
     font-weight: 600;

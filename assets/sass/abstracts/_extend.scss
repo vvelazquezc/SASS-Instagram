@@ -1,12 +1,10 @@
-%user {
-    font-size: 14px;
-    font-weight: 600;
+%flex-box-row {
+    display: flex;
+    flex-flow: row nowrap;
 }
-
-%imgs {
-    object-fit: contain;
-    max-height: 100%;
-    max-width: 100%;
+%flex-box-column {
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 %border-radius {

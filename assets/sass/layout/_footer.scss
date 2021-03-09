@@ -3,13 +3,12 @@
     height: 54px;
     bottom: 0;
     background-color: $color-white;
-    display: flex;
+    @extend %flex-box-row;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     &__links {
-        display: flex;
-        flex-flow: row nowrap;
+        @extend %flex-box-row;
         height: 50px;
         align-items: center;
         text-align: center;
