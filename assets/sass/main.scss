@@ -1,35 +1,24 @@
-@import 'abstracts/colors';
-@import 'abstracts/extend';
-
-@import 'components/buttons';
-@import 'components/imgs';
-@import 'components/text';
-
-@import 'layout/header';
-@import 'layout/content';
-@import 'layout/footer';
-@import 'layout/stories';
-
-
-@import 'login/footer';
-@import 'login/body';
+@use 'abstracts' as color;
+@use 'components';
+@use 'layout';
+@use 'login';
 
 * {
     margin: 0;
     border-spacing: inherit;
     font-size: 14px;
-    font-family: $font-family;
+    font-family: 'Open Sans', sans-serif;
 }
 .layout {
     height: 100vh;
     &__navbar {
         width: 100%;
         height: 54px;
-        border-bottom: 1px solid $color-grey;
+        border-bottom: 1px solid color.$color-grey;
     }
     &__stories {
-        background: $background-stories;
-        border-bottom: 1px solid $color-grey;
+        background: color.$background-stories;
+        border-bottom: 1px solid color.$color-grey;
         height: 84px;
     }
     &__content{
@@ -38,7 +27,7 @@
     &__footer {
         width: 100%;
         height: 54px;
-        border-top: 1px solid $color-grey;
+        border-top: 1px solid color.$color-grey;
     }
 }
 

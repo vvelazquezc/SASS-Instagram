@@ -1,3 +1,6 @@
+@use '../abstracts' as *;
+@use '../components/' as *;
+
 .login {
     &__location{
         padding-bottom: 50px;

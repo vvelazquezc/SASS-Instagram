@@ -1,5 +1,8 @@
+@use '../abstracts' as *;
+@use '../components/' as *;
+
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: $color-white;
     @extend %flex-box-row;

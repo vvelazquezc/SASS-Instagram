@@ -1,3 +1,7 @@
+
+@use '../abstracts' as *;
+@use '../components/' as *;
+
 .content{
     &__header {
         height: 60px;
