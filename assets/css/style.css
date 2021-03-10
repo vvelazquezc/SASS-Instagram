@@ -6,7 +6,7 @@
   display: flex;
   flex-flow: column nowrap; }
 
-.content__header-photo, .stories__profile-photo, .login__user-photo {
+.content__header-photo, .stories__profile-photo, .stories__profile-photo img, .login__user-photo {
   border-radius: 50%;
   box-sizing: border-box;
   display: block;
@@ -132,7 +132,17 @@
     justify-content: center; }
     .stories__profile-photo {
       height: 66px;
-      width: 66px; }
+      width: 66px;
+      position: relative;
+      padding: 1px;
+      border: 2px solid transparent;
+      background: linear-gradient(to bottom, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+      background-clip: border-box;
+      background-origin: border-box; }
+      .stories__profile-photo:hover {
+        animation-name: girar;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; }
     .stories__profile-name {
       color: #262626;
       display: block;
@@ -144,6 +154,12 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       padding-top: 5px; }
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
 .login__footer {
   width: 100%;

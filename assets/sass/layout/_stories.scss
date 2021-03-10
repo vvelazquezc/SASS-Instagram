@@ -8,7 +8,21 @@
         &-photo {
             height: 66px;
             width: 66px;
+            position: relative;
             @extend %border-radius;
+            padding: 1px;
+            border: 2px solid transparent;
+            background: linear-gradient(to bottom, #833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+            background-clip: border-box;
+            background-origin: border-box;
+            img {
+                @extend %border-radius;
+            }
+            &:hover {
+                animation-name: girar;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
         }
         &-name {
             color: $color-text;
@@ -23,4 +37,12 @@
             padding-top: 5px;
         }
     }
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
